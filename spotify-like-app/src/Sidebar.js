@@ -20,7 +20,7 @@ function Sidebar() {
             <hr />
 
             {playlists?.items?.map(playlist => (
-                <SidebarOption title={playlist.name} />
+                <SidebarOption key={playlist.name} title={playlist.name} />
             ))}
 
         </div>
