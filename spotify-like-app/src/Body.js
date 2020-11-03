@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import Header from './modules/header/Header';
 import { useDataLayerValue } from './DataLayer';
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
