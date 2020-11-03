@@ -18,14 +18,23 @@
     padding: 10px;
 }
 
-.body__info > img {
+.body__info-img {
     height: 20vw;
     margin: 0 20px;
     box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
 
-.body__infoText {
+.body__info-txt {
     flex: 1;
+}
+
+.body__info-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body__info-desc {
+    font-size: 14px;
 }
 
 .body__icons {
@@ -35,15 +44,6 @@
 
 .body__icons > .MuiSvgIcon-root {
     margin-right: 20px;
-}
-
-.body__infoText > h2 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.body__infoText > p {
-    font-size: 14px;
 }
 
 .body__songs {

@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.header__left > input {
+.header__input {
     border: none;
     width: 100%;
 }
@@ -25,6 +25,6 @@
     align-items: center;
 }
 
-.header__right > h4{
+.header__right-title {
     margin-left: 10px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.module.css';
+import css from './Footer.module.css';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
@@ -10,24 +10,24 @@ import VolumeDownIcon from '@material-ui/icons/VolumeDown';
 import { Grid, Slider } from '@material-ui/core';
 
 export const Footer = () => (
-    <div className="footer">
-        <div className="footer__left">
-            <img className="footer__albumLogo" src=""  alt="" />
-            <div className="footer_songInfo">
-                <h4>Yeah!</h4>
-                <p>Usher</p>
+    <div className={css.footer}>
+        <div className={css["footer__left"]}>
+            <img className={css["footer__album-logo"]} src=""  alt="album logo" />
+            <div className={css["footer__song-info"]}>
+                <h4 className={css["footer__song-title"]}>Yeah!</h4>
+                <p className={css["footer__song-artist"]}>Usher</p>
             </div>
         </div>
 
-        <div className="footer__center">
-            <ShuffleIcon className="footer__green" />
-            <SkipPreviousIcon className="footer__icon" />
-            <PlayCircleOutlineIcon fontSize="large" className="footer__icon" />
-            <SkipNextIcon className="footer__icon" />
-            <RepeatIcon className="footer__green" />
+        <div className={css["footer__center"]}>
+            <ShuffleIcon className={css["footer__icon"], css["footer__icon--green"]} />
+            <SkipPreviousIcon className={css["footer__icon"]} />
+            <PlayCircleOutlineIcon fontSize="large" className={css["footer__icon"]} />
+            <SkipNextIcon className={css["footer__icon"]} />
+            <RepeatIcon className={css["footer__icon"], css["footer__icon--green"]} />
         </div>
 
-        <div className="footer__right">
+        <div className={css["footer__right"]}>
             <Grid container spacing={2}>
                 <Grid item>
                     <PlaylistPlayIcon />

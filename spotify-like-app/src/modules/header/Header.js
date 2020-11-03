@@ -11,12 +11,12 @@ function Header() {
         <div className={css.header}>
             <div className={css["header__left"]}>
                 <SearchIcon />
-                <input placeholder="Search for Artists, songs, or playlists" type="text" />
+                <input className={css["header__input"]} placeholder="Search for Artists, songs, or playlists" type="text" />
             </div>
 
             <div className={css["header__right"]}>
                 <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
-                <h4>{user?.display_name}</h4>
+                <h4 className={css["header__right-title"]}>{user?.display_name}</h4>
             </div>
         </div>
     )
