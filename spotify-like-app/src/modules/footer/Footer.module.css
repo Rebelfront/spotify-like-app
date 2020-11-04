@@ -17,10 +17,6 @@
     width: 300px;
 }
 
-.footer__right .MuiSlider-root {
-    color: green;
-}
-
 .footer__album-logo {
     height: 60px;
     width: 60px;
@@ -61,4 +57,8 @@
     align-items: center;
     color: white;
     justify-content: space-between;
+}
+
+.footer__right .MuiSlider-root {
+    color: #1ed15e;
 }

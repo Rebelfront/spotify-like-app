@@ -93,7 +93,7 @@ export const Footer = ({ spotify }) => {
             </div>
 
             <div className={css["footer__center"]}>
-                <ShuffleIcon className={cx("footer__icon", "footer__icon--green")} />
+                <ShuffleIcon className={cx(css["footer__icon"], css["footer__icon--green"])} />
                 <SkipPreviousIcon 
                     onClick={skipPrevious} 
                     className={css["footer__icon"]} 
@@ -107,7 +107,7 @@ export const Footer = ({ spotify }) => {
                     onClick={skipNext}
                     className={css["footer__icon"]} 
                 />
-                <RepeatIcon className={cx("footer__icon", "footer__icon--green")} />
+                <RepeatIcon className={cx(css["footer__icon"], css["footer__icon--green"])} />
             </div>
 
             <div className={css["footer__right"]}>
@@ -123,6 +123,6 @@ export const Footer = ({ spotify }) => {
                     </Grid>
                 </Grid>
             </div> 
-    </div>
+      </div>
     );
 }
