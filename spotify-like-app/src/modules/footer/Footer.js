@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import css from './Footer.module.css';
+import classNames from 'classnames/bind';
 import { useDataLayerValue } from '../../DataLayer';
 
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
@@ -13,6 +14,7 @@ import { Grid, Slider } from '@material-ui/core';
 
 export const Footer = ({ spotify }) => {
     const [{ token, item, playing }, dispatch] = useDataLayerValue();
+    let cx = classNames.bind(css);
 
     useEffect(() => {
         spotify.getMyCurrentPlaybackState().then((r) => {
@@ -91,7 +93,7 @@ export const Footer = ({ spotify }) => {
             </div>
 
             <div className={css["footer__center"]}>
-                <ShuffleIcon className={css["footer__icon"]} />
+                <ShuffleIcon className={cx("footer__icon", "footer__icon--green")} />
                 <SkipPreviousIcon 
                     onClick={skipPrevious} 
                     className={css["footer__icon"]} 
@@ -105,7 +107,7 @@ export const Footer = ({ spotify }) => {
                     onClick={skipNext}
                     className={css["footer__icon"]} 
                 />
-                <RepeatIcon className={css["footer__icon"]} />
+                <RepeatIcon className={cx("footer__icon", "footer__icon--green")} />
             </div>
 
             <div className={css["footer__right"]}>
