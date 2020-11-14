@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import {Login} from './modules/Login/Login';
+import {Login} from './modules/login/Login';
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Player from "./modules/Player/Player";
 import { useDataLayerValue } from './DataLayer';
 
-const spotify = new SpotifyWebApi();
-
+export const spotify = new SpotifyWebApi();
 
 function App() {
   const [{ token }, dispatch] = useDataLayerValue();
@@ -57,15 +56,13 @@ function App() {
           top_artists: response,
         });
       });
-
-
     }
 
   }, [token, dispatch]);
 
   return (
     <div className="app">
-      {token ? <Player spotify={spotify} /> : <Login />}
+      {token ? <Player /> : <Login />}
     </div>
   );
 }

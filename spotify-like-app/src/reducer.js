@@ -59,7 +59,6 @@ const reducer = (state, action) => {
                     ...state,
                     item: action.item,
                 };
-        
     
         default:
             return state;
